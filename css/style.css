@@ -1,0 +1,71 @@
+body {
+	background: darkseagreen;
+/*This is a CSS comment*/
+	background: url(../images/background3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 25%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.main {
+	width: 600px;
+	background: rgba(255,255,255,0.7);
+	margin: 0 auto;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px 10px rgba(255,255,255,0.8);
+}
+
+@media only screen and (max-width: 767px) {
+	body {
+		
+	}
+	.main {
+		width: 100%;
+	}
+}
+	h1 {
+		text-align: center;
+		/*font-family: Impact;*/
+		font-family: 'Lobster', cursive;
+		text-shadow: 0px 0px 20px red;
+}
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-weight: normal;
+	}
+	h3 {
+		margin-bottom: 0;
+		cursor: pointer;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+		border: 5px solid black;
+		border-radius: 50%;
+	}
+
+	p,
+	ul,
+	ol {
+		line-height: 1.6;
+		list-style: none;
+		padding-left: 0;
+	}
+
+
+	a {
+		color: #df0066;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	a:hover {
+		color: #bb0033;
+		text-decoration: underline;
+	}

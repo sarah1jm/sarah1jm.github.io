@@ -1,0 +1,5 @@
+/*!CK:2749923778!*//*1441403184,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["NYMHK"]); }
+
+__d('SessionStartSurvey',['AsyncRequest','SubscriptionsHandler','XSearchFacebarSurveyController','getOrCreateDOMID'],function a(b,c,d,e,f,g,h,i,j,k){if(c.__markCompiled)c.__markCompiled();function l(m){'use strict';this.core=m.getCore();this.data=m.getData();this.subscriptionsHandler=new i();}l.prototype.enable=function(){'use strict';this.subscriptionsHandler.addSubscriptions(this.data.subscribe('query',(function(){this.openSurvey();}).bind(this)));};l.prototype.disable=function(){'use strict';this.subscriptionsHandler.release();this.request&&this.request.abort();};l.prototype.openSurvey=function(){'use strict';if(this.openedSurvey)return;this.openedSurvey=true;var m=j.getURIBuilder().setString('id',k(this.core.element)).setExists('on_session_start',true).setString('session_id',this.data.queryData.sid);this.request=new h().setMethod('post').setURI(m.getURI());this.request.send();};f.exports=l;},null);
